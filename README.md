@@ -43,5 +43,42 @@ MySQL
 Multer
 Socket.io
 
+# Your directory structure could look something like this:
+eLitmus-Proctoring-Extension
+│   README.md
+│   package.json   
+│   server.js    
+│   config.js    
+│   .env        
+│
+└───public
+│   │   index.html
+│   │
+│   └───css
+│   │   │   style.css
+│   │
+│   └───js
+│       │   popup.js
+│
+└───server
+│   │   db.js
+│   │   routes.js
+│   │   imageProcessor.js
+│   │
+│   └───uploads
+│       │   [image files]
+│   
+└───node_modules
+Where eLitmus-Proctoring-Extension is the root directory, public contains the client-side code, server contains the server-side code and node_modules contains the installed dependencies.
+
+server.js is the main entry point for the backend and config.js contains the configuration details for the database and image processing. .env contains the environment variables for the application.
+
+db.js contains the database connection details and helper functions for querying the database. routes.js contains the API routes for the application. imageProcessor.js contains the code for capturing and processing images. The uploads folder is where the captured images will be stored.
+
+In public, index.html is the main HTML file, style.css contains the styles and popup.js contains the client-side code for the extension.
+
+package.json contains the metadata for the project and the list of dependencies needed to run the application
+
+
 ## Contributing
 If you wish to contribute to the eLitmus Chrome Extension, feel free to fork the repository and submit a pull request.
